@@ -1,0 +1,19 @@
+<main id="weatherCard">
+    <form id="inputCidade" autocomplete="off" (ngSubmit)="getCityWeather()">
+        <input id="inpCidade" #inpCidade type="text" autocomplete="do-not-autofill" value="Sorocaba">
+        <button id="btnProcurar" type="submit">Procurar</button>
+    </form>
+    <section id="todaysWeather">
+        <i id="weatherIcon" [class]="'fa-solid ' + weatherIcon"></i>
+        <div id="todaysStatus" *ngIf="todays.length !== 0">
+            <span id="weather">{{todays[0]}}</span>
+            <span id="weatherDesc">{{todays[1]}}</span>
+            <span id="todaysTemp">{{todays[2]}} <i class="fa-solid fa-temperature-three-quarters"></i></span>
+            <span id="todaysHumi">{{todays[3]}} <i class="fa-solid fa-water"></i></span>
+        </div>
+    </section>
+
+    <section id="forecastSection">
+        <app-forecast-card class="forecastCard" *ngFor="let forecast of forecasts" [dados]="forecast"></app-forecast-card>
+    </section>
+</main>

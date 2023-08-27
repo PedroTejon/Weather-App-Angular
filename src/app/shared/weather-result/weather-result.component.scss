@@ -1,0 +1,147 @@
+#weatherCard {
+    width: 33%;
+    height: 80%;
+
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 1fr;
+    grid-template-columns: 1fr;
+
+    background-color: #1B263B;
+
+    border: 0px;
+    border-radius: 5px;
+}
+
+#inputCidade {
+    width: 1fr;
+    height: 0.5fr;
+
+    grid-row: 1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 5fr 1fr;
+
+    padding: 1vh;
+    margin: 1vh;
+
+    background-color: #415a776a;
+
+    border-radius: 5px;
+}
+
+#inpCidade {
+    width: 100%;
+    grid-column: 1;
+    font-size: 32px;
+    text-align: center;
+
+    background-color: #1b263bc5;
+    
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+#btnProcurar {
+    grid-column: 2;
+    font-size: 18px;
+    text-align: center;
+
+    background-color: #1b263be9 !important;
+    
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+#todaysWeather{
+    height: 3fr;
+    width: 1fr;
+
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-bottom: 2vh;
+}
+
+#todaysStatus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0;
+    align-items: center;
+}
+
+#weather {
+    grid-column: 1;
+    grid-row: 1;
+
+    font-size: 48px;
+}
+
+#weatherDesc, #todaysHumi {
+    align-self: flex-start;
+}
+
+#weatherDesc {    
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#todaysTemp, #todaysHumi
+{
+    text-align: end;
+}
+
+#todaysTemp {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#todaysHumi {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#weatherIcon {
+    margin-bottom: 2vh;
+
+    font-size: 250px;
+}
+
+#forecastSection {
+    height: 1fr;
+    width: 1fr;
+
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+
+    margin: 1vh;
+    padding: 1vh;
+
+    border-radius: 5px;
+
+    background-color: #415a776a;
+}
+
+.forecastCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1b263bc5;
+
+    border: 0;
+    border-radius: 5px;
+}
+
